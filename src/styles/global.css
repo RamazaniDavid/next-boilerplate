@@ -1,0 +1,103 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/fonts/avenir/39FEED_0_0.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/fonts/avenir/39FEED_0_0.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/fonts/avenir/39FEED_1_0.woff2");
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/fonts/avenir/39FEED_2_0.woff2");
+  font-style: heavy;
+  font-weight: 800;
+  font-display: swap;
+}
+
+body {
+  font-family: "Avenir";
+}
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+hr {
+  border-top: 1px solid gray;
+}
+
+.Typewriter {
+  display: inline-block;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+
+
+@layer utilities {
+  .blueLink {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+
+  .blueLink:hover {
+    color: #2e99ff;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+}
+
+
+.w-special {
+  @apply w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto; 
+}
